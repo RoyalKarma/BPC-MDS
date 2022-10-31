@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Empty Title</title>
+</head>
+<body>
+<form method='post' action='dashPlayer'>
+  <input type="radio" name="url" value="file">
+  <label >Local File</label><br>
+
+  <input type="radio" name="url" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+  <label>Video URL</label><br>
+
+  <input type="radio"  name="url" value="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd">
+  <label >Dash URL</label><br>
+
+  <input type="radio"  name="url" value="/dash/manifest.mpd">
+  <label >Dash Local</label><br>
+
+  <input type="radio"  name="url" value="/hls/playlist.m3u8">
+  <label>HLS Local</label><br>
+
+
+  <input type='submit' value='Submit'/>
+
+
+</form>
+<form action="/gallery">
+  <input type="submit" value="Gallery" />
+</form>
+</body>
+</html>

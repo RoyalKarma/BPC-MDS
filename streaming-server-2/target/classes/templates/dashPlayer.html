@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptivni stream</title>
+</head>
+<h2>Adam Tuček 227855</h2>
+
+<video th:src="${url}" width="1000" height="400" controls data-dashjs-player/>
+
+    <script type="text/javascript" th:src="@{/js/dash.all.debug.js}"></script>
+
+</html>

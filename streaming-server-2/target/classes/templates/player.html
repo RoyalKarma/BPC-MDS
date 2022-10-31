@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Empty Title</title>
+</head>
+<body>
+<h2>Adam Tuček 227855</h2>
+<video th:width="${sirka}" controls th:muted="${muted}" th:autoplay="${autoplay}" >
+  <source th:src="${url}" type="video/mp4"/>
+</video>
+</body>
+</html>
